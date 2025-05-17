@@ -1568,7 +1568,8 @@ img {
 }
 
 .btn-primary:hover {
-  background-color: white;
+  background-color: rgb(21, 21, 121);
+  color: #d2d2d2;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(67, 97, 238, 0.3);
 }
