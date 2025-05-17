@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Certificate</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="certificate">
+        <h1>Certificate of Completion</h1>
+        <p class="subtitle">This is proudly awarded to</p>
+        <h2 id="certificateName">Participant</h2>
+        <p class="desc">For successfully completing the</p>
+        <p class="course">7-Day Web Development Bootcamp</p>
+
+        <div class="footer">
+            <div class="date"><em>Date: <span id="certificateDate"></span></em></div>
+            <div class="signature">_______________________<br><span>Instructor Signature</span></div>
+        </div>
+    </div>
+
+    <script>
+        // Get name from URL parameters or localStorage
+        const urlParams = new URLSearchParams(window.location.search);
+        const name = urlParams.get('name') || localStorage.getItem('userName') || 'Participant';
+        
+        // Set the name and date in the certificate
+        document.getElementById('certificateName').textContent = name;
+        
+        const today = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('certificateDate').textContent = today.toLocaleDateString('en-US', options);
+    </script>
+</body>
+</html>

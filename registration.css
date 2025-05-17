@@ -1,0 +1,107 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to bottom right, #c6f1f8, #fbd5e3);
+  background-repeat: no-repeat;
+  height: 578px;
+}
+form {
+  display: inline-block;
+  padding: 20px;
+  background: #f4f4f491;
+  border-radius: 8px;
+  width: 500px;
+}
+
+input,
+button {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border-color: azure;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: #3674b5;
+  width: 80%;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #3e648d;
+  transition: 0.3s ease;
+  color: #ffffff;
+}
+.certificate {
+  border: 8px double #cba135;
+  padding: 50px 30px;
+  background: #fffefc;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.certificate h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  color: #222;
+  font-family: "Georgia", serif;
+}
+
+.certificate .subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #444;
+  font-style: italic;
+}
+
+.certificate h2 {
+  font-size: 30px;
+  margin: 20px 0;
+  color: #2d2d2d;
+  letter-spacing: 1px;
+}
+
+.certificate .desc {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.certificate .course {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 40px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+.date {
+  text-align: left;
+}
+
+.signature {
+  text-align: right;
+}
+.signature span {
+  display: block;
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}

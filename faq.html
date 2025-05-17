@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - Web in 7 Days</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+     <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span>7</span>
+                <h1>Webln7Days</h1>
+            </div>
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Toggle navigation" aria-expanded="false">
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+                <span class="burger-bar"></span>
+            </button>
+            
+            <nav class="navbar" id="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="CrsOverview.html">Course Overview</a></li>
+                    <li><a href="Curriculum.html">Curriculum</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+                <div class="header-btn">
+                    <a href="registration.html" class="btn btn-primary">Start Learning</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- FAQ Hero Section -->
+    <section class="faq-hero">
+        <div class="container">
+            <div class="faq-hero-content">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about our 7-day web development course</p>
+                <div class="search-box">
+                    <input type="text" placeholder="Search questions...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <section class="faq-categories">
+        <div class="container">
+            <div class="category-buttons">
+                <button class="active" data-category="all">All Questions</button>
+                <button data-category="getting-started">Getting Started</button>
+                <button data-category="course-content">Course Content</button>
+                <button data-category="technical">Technical Help</button>
+                <button data-category="payment">Payment</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-accordion">
+        <div class="container">
+            <div class="accordion-container">
+                <!-- Getting Started Questions -->
+                <div class="faq-item" data-category="getting-started">
+                    <button class="accordion-header">
+                        <span>Who is this course for?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>This course is designed for absolute beginners with no prior coding experience who want to learn web development from scratch. It's also suitable for those with some basic knowledge who want a structured, project-based approach to solidify their skills.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="getting-started">
+                    <button class="accordion-header">
+                        <span>What do I need to get started?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>You'll need:</p>
+                        <ul>
+                            <li>A computer (Windows, Mac, or Linux)</li>
+                            <li>Internet connection</li>
+                            <li>A modern web browser (Chrome, Firefox, or Edge recommended)</li>
+                            <li>A code editor (we recommend VS Code which is free)</li>
+                            <li>No prior coding experience required!</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Course Content Questions -->
+                <div class="faq-item" data-category="course-content">
+                    <button class="accordion-header">
+                        <span>What will I build in this course?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>By the end of the 7 days, you'll have built a complete, responsive personal portfolio website that includes:</p>
+                        <ul>
+                            <li>Multiple sections (About, Projects, Contact)</li>
+                            <li>Responsive design that works on all devices</li>
+                            <li>Interactive elements with JavaScript</li>
+                            <li>A contact form</li>
+                            <li>Your own custom domain (we'll show you how to set this up)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="course-content">
+                    <button class="accordion-header">
+                        <span>How much time do I need each day?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We recommend setting aside 1-2 hours per day to complete each lesson. The course is designed with busy schedules in mind:</p>
+                        <ul>
+                            <li>Day 1: 1 hour (setup and fundamentals)</li>
+                            <li>Days 2-4: 1.5 hours each (HTML, CSS, responsive design)</li>
+                            <li>Days 5-6: 2 hours each (JavaScript, building complete page)</li>
+                            <li>Day 7: 1 hour (deployment and sharing)</li>
+                        </ul>
+                        <p>You can go at your own pace - the 7-day timeline is just a suggested schedule.</p>
+                    </div>
+                </div>
+
+                <!-- Technical Questions -->
+                <div class="faq-item" data-category="technical">
+                    <button class="accordion-header">
+                        <span>What if I get stuck during the course?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>We have multiple support options:</p>
+                        <ul>
+                            <li><strong>Community Forum:</strong> Get help from other students and our team</li>
+                            <li><strong>Q&A Sessions:</strong> Weekly live sessions with instructors</li>
+                            <li><strong>Solution Videos:</strong> Step-by-step walkthroughs for each lesson</li>
+                            <li><strong>Email Support:</strong> Direct help from our support team</li>
+                        </ul>
+                        <p>Most questions are answered within 24 hours in our community forum.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="technical">
+                    <button class="accordion-header">
+                        <span>Do I need to install special software?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The only software you'll need is:</p>
+                        <ul>
+                            <li>A code editor (we recommend VS Code which is free)</li>
+                            <li>A modern web browser (Chrome or Firefox recommended)</li>
+                        </ul>
+                        <p>We'll walk you through the installation process on Day 1, and all other tools we use are either built into your browser or available as free online services.</p>
+                    </div>
+                </div>
+
+                <!-- Payment Questions -->
+                <div class="faq-item" data-category="payment">
+                    <button class="accordion-header">
+                        <span>Is there a money-back guarantee?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Yes! We offer a 30-day money-back guarantee with no questions asked. If you're not completely satisfied with the course, just email us within 30 days of purchase for a full refund.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-category="payment">
+                    <button class="accordion-header">
+                        <span>Are there any hidden costs?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>The course fee covers all learning materials and access to our community. The only optional costs would be:</p>
+                        <ul>
+                            <li>If you choose to purchase a custom domain name for your website (typically $10-15/year)</li>
+                            <li>If you want to use premium hosting instead of the free options we recommend</li>
+                        </ul>
+                        <p>We'll show you how to launch your website completely for free during the course.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="contact-box">
+                <h2>Still have questions?</h2>
+                <p>Can't find what you're looking for? Our support team is happy to help!</p>
+                <a href="contact.html" class="btn btn-primary">Contact Support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Same as other pages) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span>7</span>
+                        <h3>Webln7Days</h3>
+                    </div>
+                    <p>Launch your first website in just 7 days — no experience needed!</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Course</h4>
+                    <ul>
+                        <li><a href="CrsOverview.html">Overview</a></li>
+                        <li><a href="Curriculum.html">Curriculum</a></li>
+                        <li><a href="certificate.html">Certification</a></li>
+                        <li><a href="instructors.html">Instructors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="resources.html">Free Tools</a></li>
+                        <li><a href="templates.html">Templates</a></li>
+                        <li><a href="assets.html">Icons & Assets</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 WebIn7Days. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // FAQ Accordion Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionHeaders = document.querySelectorAll('.accordion-header');
+            
+            accordionHeaders.forEach(header => {
+                header.addEventListener('click', function() {
+                    const item = this.parentElement;
+                    const content = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                    
+                    // Toggle icon
+                    if (item.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.replace('fa-chevron-down', 'fa-chevron-up');
+                    } else {
+                        content.style.maxHeight = 0;
+                        icon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                    }
+                    
+                    // Close other items
+                    accordionHeaders.forEach(otherHeader => {
+                        if (otherHeader !== header) {
+                            const otherItem = otherHeader.parentElement;
+                            const otherContent = otherHeader.nextElementSibling;
+                            const otherIcon = otherHeader.querySelector('i');
+                            
+                            otherItem.classList.remove('active');
+                            otherContent.style.maxHeight = 0;
+                            otherIcon.classList.replace('fa-chevron-up', 'fa-chevron-down');
+                        }
+                    });
+                });
+            });
+            
+            // FAQ Category Filter
+            const categoryButtons = document.querySelectorAll('.category-buttons button');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const category = this.getAttribute('data-category');
+                    
+                    // Update active button
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Filter FAQ items
+                    const faqItems = document.querySelectorAll('.faq-item');
+                    faqItems.forEach(item => {
+                        if (category === 'all' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // FAQ Search Functionality
+            const searchInput = document.querySelector('.search-box input');
+            const searchButton = document.querySelector('.search-box button');
+            
+            function searchFAQs() {
+                const searchTerm = searchInput.value.toLowerCase();
+                const faqItems = document.querySelectorAll('.faq-item');
+                
+                faqItems.forEach(item => {
+                    const question = item.querySelector('.accordion-header span').textContent.toLowerCase();
+                    const answer = item.querySelector('.accordion-content').textContent.toLowerCase();
+                    
+                    if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+            
+            searchButton.addEventListener('click', searchFAQs);
+            searchInput.addEventListener('keyup', function(e) {
+                if (e.key === 'Enter') {
+                    searchFAQs();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
